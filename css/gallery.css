@@ -1,0 +1,317 @@
+.conteiner {
+	/* flex: 3; */
+	padding-top: 4em;
+	width: 1080px;
+	height: auto;
+	overflow: hidden;
+	margin: .5em auto;
+}
+
+section {
+	width: 100%;
+	overflow: hidden;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	animation: sectionAnimation 3s;
+}
+
+section .img {
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+section .img:hover {
+	-webkit-animation-timing-function: hoverAnimation;
+	-o-animation-timing-function: hoverAnimation;
+	animation-timing-function: hoverAnimation;
+}
+
+.conteiner .img:before {
+	content: attr(data-text) "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.384);
+	top: 0;
+	left: 0;
+	position: absolute;
+	color: #FFF;
+	line-height: 30px;
+	top: 100%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-moz-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.conteiner .img:hover:before {
+	top: 0;
+}
+
+.conteiner .img img {
+	width: 100%;
+	float: left;
+	border: 2px solid #FFF;
+}
+
+.imagen {
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 11px;
+	color: #669;
+	width: 20%;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	transition: all 1s ease;
+}
+
+.imagen img {
+	width: 100%;
+	float: left;
+}
+
+@keyframes sectionAnimation {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes titleAnimation {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+.dp-flex {
+	display: flex;
+}
+
+.proyectos-2 {
+	padding: 40px 0;
+}
+
+.proyectos-2 h3 {
+	text-align: center;
+}
+
+.proyectos-2 .container {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.proyectos-2 .card {
+	width: 31%;
+	position: relative;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 8px;
+	height: 250px;
+}
+
+.proyectos-2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.proyectos-2 .txt {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.proyectos-2 p {
+	font-weight: bold;
+	color: white;
+	font-size: 1.3em;
+	position: absolute;
+	padding: 0 !important;
+	margin: 0 auto;
+}
+
+.proyectos-2 .card:hover .content {
+	transition: 0.2s linear;
+	background: rgba(0, 0, 0, 0.466);
+	opacity: 1;
+
+}
+
+.proyectos-2 .content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: 0.2s linear;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.proyectos-2 .btn {
+	margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+	.wrapper {
+		width: 90%;
+	}
+
+	.proyectos-2 .card {
+		width: 45%;
+	}
+}
+
+
+@media screen and (max-width: 750px) {
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.proyectos-2 .card {
+		width: 92%;
+		height: 25%;
+	}
+}
+
+#prueba .container .dp-flex {
+	flex-wrap: wrap;
+
+}
+
+
+.section-header .txt-center h3 {
+	text-align: center !important;
+}
+
+.body-tramites {
+	margin: 10px 15px;
+
+}
+
+.body-tramites h3 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.body-tramites p {
+	font-size: 15px;
+}
+
+.txt-center h3 {
+	font-size: 36px;
+	color: rgb(40, 61, 80);
+	text-align: center;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.row2 {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.empleo {
+	padding: 50px 0px;
+}
+
+.empleo .row{
+	margin: 0px 10px;
+}
+
+.empleo .row h4 {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.empleo .row p {
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.empleo .row ul {
+	padding-left: 8px;
+	font-weight: 500;
+}
+
+.empleo .row li {
+	list-style: none;
+	font-size: 18px;
+}
+
+.empleo .row i {
+	margin-right: 8px;
+}
+
+.empleo .row a {
+	background: #167557;
+	border: 0;
+	border-radius: 20px;
+	padding: 8px 30px;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 5px;
+	margin:5px auto 25px auto;
+	display: inline-block;
+  }
+
+  .empleo .row  {
+	align-items: center;
+}
+
+@media screen and (max-width:574px){
+	.empleo .row a {
+		text-align: center;
+		display: block;
+	  }
+	
+}
+
+@media screen and (max-width:991px){
+	.empleo {
+		padding-top: 0px;
+	  }
+
+	  .banner{
+		  margin-top: 62px !important;
+	  }
+	
+}
