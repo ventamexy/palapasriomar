@@ -4,12 +4,12 @@
 
 @import url(../css/superslides.css);
 
-.btn-cart {}
+/*.btn-cart {}
 
 .cart-list h6 a {
     font-size: 16px;
     font-weight: 700;
-}
+}*/
 
 .cart-list h6 a:hover {
     color: #d33b33;
@@ -71,11 +71,11 @@ ul.cart-list p .price {
     color: #ffffff;
 }
 
-.hvr-hover {}
+/*.hvr-hover {}
 
 ul.cart-list>li.total>.btn:hover {
     color: #ffffff;
-}
+}*/
 
 .cart-box {
     margin-top: 40px;
@@ -111,13 +111,13 @@ ul.cart-list>li.total>.btn:hover {
     display: none;
 }
 
-.slides-navigation a:hover {}
+/*.slides-navigation a:hover {}
 
 .cover-slides .container {
     height: 100%;
     position: relative;
     z-index: 2;
-}
+}*/
 
 .cover-slides .container>.row {
     -webkit-box-align: center;

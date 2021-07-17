@@ -238,10 +238,10 @@ h6 {
 
 /* Desktop Navigation */
 
-.main-nav {
+/*.main-nav {
   /* Drop Down */
   /* Deep Drop Down */
-}
+/*}*/
 
 .main-nav,
 .main-nav * {
@@ -1380,10 +1380,10 @@ justify-content: center;
   padding: 10px;
 }
 
-#tipo-visa .section-header h3,
+/*#tipo-visa .section-header h3,
 #tipo-visa .section-header p {
  
-}
+}*/
 
 #tipo-visa .card {
   border-color: #686c7287;
