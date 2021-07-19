@@ -51,7 +51,7 @@
 
 #contact2 .card i{
   font-size: 50px;
-  color: #167557;
+  color: #54635e;
 }
 
 #contact2 .mb-4{
@@ -206,8 +206,8 @@ font-weight: 600;
 }
 
 #services2 img{
- width: 100%;
- height: 100%;
+  width: 20%;
+ height: 10%;
  padding-top: 0px;
 }
 

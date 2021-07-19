@@ -1313,7 +1313,7 @@ justify-content: center;
 }
 
 #tipo-visa .col-lg-4 {
-  padding: 10px;
+  padding: 10px; /*indica espacio entre div*/
 }
 
 #tipo-visa .card {
@@ -1337,20 +1337,21 @@ justify-content: center;
 }
 
 #tipo-visa .card h5 {
-  font-size: 15px;
+  font-size: 20px; /*Tamaño de la letra que esta arriba de la img*/
   font-weight: 600;
   
 }
 
 #tipo-visa .card p {
-  font-size: 14px;
+  font-size: 14px; /*tamaño de letra que está abajo de la img*/
 }
 
 
 #tipo-visa img {
  margin: auto;
-  padding-top: 10px;
-  width: 60px;
+  padding-top: 10px; /*Espacio entre txt e img*/
+  width: 400px; /*tamaño de img*/
+  height: 300px;
   color: red;
 
 }
