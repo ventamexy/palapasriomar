@@ -1,5 +1,4 @@
 .conteiner {
-	/* flex: 3; */
 	padding-top: 4em;
 	width: 1080px;
 	height: auto;
@@ -56,8 +55,6 @@ section .img:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*-webkit-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-	-moz-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);*/
 }
 
 .conteiner .img:hover:before {
