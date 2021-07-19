@@ -114,7 +114,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #A9DFBF; /*fondo de menu*/
+  background: #CD853F; /*fondo de menu*/
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
@@ -220,7 +220,7 @@ h6 {
 }
 
 .main-nav > ul > li {
-  position: relative;
+  position:relative;
   white-space: nowrap;
   float: left;
 }
@@ -1096,7 +1096,7 @@ justify-content: center;
 
 
 #footer .footer-top {
-  background: #004a99;
+  background: #CD853F; /*fondo de ultima sección (ultimas publi, sitiosw web relacionados, numeros)*/
   padding: 60px 0 30px 0;
 }
 
