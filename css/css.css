@@ -91,19 +91,19 @@
 }
 
 .banner {
-  background-image: url(../img/call.jpg);
+  background-image: url(../img/nosotros.jpg); /*img de html acerca de nosotros*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 90px 0; /*height de la img de acerca de nosotros*/
   text-align: center;
-  margin-top: 81px;
+  margin-top: 20px; /*espacio de la img de acerca de nosotros entre el menu y la img*/
 }
 
 .banner h2 {
   color: rgb(255, 255, 255);
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 80px; /*tamaño de del txt nosotros de la img*/
+  font-weight: 700;/*grosor de la palabra nosotros de img*/
 }
 
 .banner2 {
@@ -205,7 +205,7 @@ font-weight: 600;
   margin-top: 10px;
 }
 
-#services2 img.uno{
+#services2 img.uno{ /*pagina de servicios, coloca texto a la derecha de la img*/
   float:left;
   margin-right: 15px;
   width: 20%;

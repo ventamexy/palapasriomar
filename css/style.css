@@ -146,11 +146,13 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  height: 35px;
+  height: 60px; /*tamaño del logo*/
+  margin: 5px;/*emparejar logo y menú en linea*/
+  margin-left: 1%;/*recorrer logo hacia derecha*/
 }
 
 .main-pages {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 #header img{
@@ -227,15 +229,17 @@ h6 {
   position:relative;
   white-space: nowrap;
   float: left;
+  margin-top: -2%;
+  margin-right: 0px; /*espacio de selección entre vinculos de menú*/
 }
 
 .main-nav a {
   display: block;
   position: relative;
   color: #283d50;
-  padding: 10px 20px;
+  padding: 5px 80px; /*recorriendo hacia abajo y recorriendo txt de menu hacia la derecha y separandolo*/
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 20px; /*tamaño de la letra del menú*/
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -243,7 +247,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #ce1227;
+  color: #fff;
   text-decoration: none;
 }
 
