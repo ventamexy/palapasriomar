@@ -1318,7 +1318,7 @@ justify-content: center;
 }
 
 #tipo-palapa .col-lg-4 {
-  padding: 10px; /*indica espacio entre div en la sección de nuestros servicios*/
+  padding: 5px; /*indica espacio entre div en la sección de nuestros servicios*/
 }
 
 #tipo-palapa .card {
@@ -1342,8 +1342,8 @@ justify-content: center;
 }
 
 #tipo-palapa .card h5 {
-  font-size: 20px; /*Tamaño de la letra que esta arriba de la img*/
-  font-weight: 600;
+  font-size: 50px; /*Tamaño de la letra que esta arriba de la img en nuestros servicios*/
+  font-weight: 500; /*grosor de letra que está arriba de img en nuestros servicios*/
   
 }
 
@@ -1355,7 +1355,7 @@ justify-content: center;
 #tipo-palapa img {
  margin: auto;
   padding-top: 10px; /*Espacio entre txt e img*/
-  width: 400px; /*tamaño de img*/
+  width: 385px; /*tamaño de img*/
   height: 300px;
   color: red;
 
