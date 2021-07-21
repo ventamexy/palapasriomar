@@ -1,6 +1,6 @@
 
 .slider{
-  margin-top: 62px;
+  margin-top: 20px; /*Espacio entre img y menu de index*/
 }
 
 .txt-slider {
@@ -20,7 +20,8 @@
   padding: 0;
   color: #fff;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 700;
+  margin-top: 150px;
 }
 
 .txt-slider p {
@@ -43,7 +44,6 @@
   font-size: 32px;
   color: #133157;
 }
-
 
 #contact2 {
  margin-top: 25px;
@@ -107,19 +107,43 @@
 }
 
 .banner2 {
-  background-image: url(../img/banner3.jpg);
+  background-image: url(../img/servicios.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px 0;
   text-align: center;
-  margin-top: 81px;
+  margin-top: 20px;
 }
 
 .banner2 h2 {
   color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: 500;
+}
+
+.tema-servicios { /*subtema de servicios*/
+  color: hsl(212, 29%, 13%) ;
+  font-size: 30px;
+  font-weight: 700px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tipo-pal {
+  color: #17202A ; /*lista de tipo de palapas en servicios*/
+  font-size: 18px;
+  font-weight: 180;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.texto-servicios { /*txt abjo de lista de servicios*/
+  color: #17202A ;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+  margin-top: 30px;
 }
 
 #about a{
@@ -133,7 +157,7 @@
   font-size: 14px;
   font-weight: bold;
 }
-/*
+
 #about2{
   margin: 70px 0px 50px 0px;
 
@@ -143,7 +167,7 @@
 font-weight: 600;
 
 }
-
+/*
 .empleo2 {
 	padding: 0px 0px 50px 0px;
 }
@@ -209,7 +233,7 @@ font-weight: 600;
   float:left;
   margin-right: 15px;
   width: 20%;
-  height: 5%;
+  height: 2%;
   padding-top: 0px;
  
 }
@@ -218,11 +242,16 @@ font-weight: 600;
   clear: both;
 }
 
+.card-1 aside{
+  text-align: justify;
+  margin-top: 60px;
+}
+
 #services2 img.dos{
   float:left;
   margin-right: 15px;
   width: 20%;
-  height: 20%;
+  height: 10%;
   padding-top: 0px;
  
 }

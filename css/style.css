@@ -1346,15 +1346,16 @@ justify-content: center;
 }
 
 #tipo-palapa .card h5 {
-  font-size: 50px; /*Tamaño de la letra que esta arriba de la img en nuestros servicios*/
-  font-weight: 500; /*grosor de letra que está arriba de img en nuestros servicios*/
+  font-size: 37px; /*Tamaño de la letra que esta arriba de la img en nuestros servicios*/
+  font-weight: 550; /*grosor de letra que está arriba de img en nuestros servicios*/
   
 }
-
+/*
 #tipo-palapa .card p {
-  font-size: 14px; /*tamaño de letra que está abajo de la img*/
+  font-size: 17px; /*tamaño de letra que está abajo de la img en nuestros servicios*/
+/*  font-weight: 300;
 }
-
+*/
 
 #tipo-palapa img {
  margin: auto;
