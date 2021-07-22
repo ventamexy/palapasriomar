@@ -1,5 +1,15 @@
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
 
 @import url(../css/superslides.css);
+
+.btn-cart {}
+
+.cart-list h6 a {
+    font-size: 16px;
+    font-weight: 700;
+}
 
 .cart-list h6 a:hover {
     color: #d33b33;
@@ -31,9 +41,39 @@ ul.cart-list p .price {
     box-shadow: none;
 }
 
+/* HOVER QUE SALE DE ADENTRO HACIA AFUERA DESDE EL CENTRO COLOR NEGRO
+ .hvr-hover::after {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: #010101;
+     -webkit-transform: scaleY(0);
+     transform: scaleY(0);
+     -webkit-transform-origin: 50%;
+     transform-origin: 50%;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
+}
+
+*/
+
 .hvr-hover:hover::after {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
+    color: #ffffff;
+}
+
+.hvr-hover {}
+
+ul.cart-list>li.total>.btn:hover {
     color: #ffffff;
 }
 
@@ -41,6 +81,8 @@ ul.cart-list p .price {
     margin-top: 40px;
     background: #ffffff;
 }
+
+/*------------------------------------------------------------------ Slider -------------------------------------------------------------------*/
 
 .cover-slides {
     height: 50vh;
@@ -57,12 +99,24 @@ ul.cart-list p .price {
     cursor: pointer;
 }
 
-.slides-navigation a i { /*flechas de navegación*/
+/*------------------------------------------------------------------
+                      FLECHAS DE NAVEGACION
+-------------------------------------------------------------------*/
+
+.slides-navigation a i {
     font-size: 25px;
     background: #ebebeb;
     border-radius: 50%;
     padding: 7px 9px 7px 5px;
     display: none;
+}
+
+.slides-navigation a:hover {}
+
+.cover-slides .container {
+    height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .cover-slides .container>.row {
@@ -91,7 +145,11 @@ ul.cart-list p .price {
     margin-bottom: 0 !important;
 }
 
-.slides-pagination a {/*Botones*/
+/*------------------------------------------------------------------
+                           BOTONES
+-------------------------------------------------------------------*/
+
+.slides-pagination a {
     border: 1px solid #0000004b;
 }
 

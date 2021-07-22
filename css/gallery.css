@@ -1,4 +1,5 @@
 .conteiner {
+	/* flex: 3; */
 	padding-top: 4em;
 	width: 1080px;
 	height: auto;
@@ -55,6 +56,8 @@ section .img:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	-webkit-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-moz-transition: all .3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
 }
 
 .conteiner .img:hover:before {
@@ -244,4 +247,71 @@ section .img:hover {
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
+}
+
+.empleo {
+	padding: 50px 0px;
+}
+
+.empleo .row{
+	margin: 0px 10px;
+}
+
+.empleo .row h4 {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.empleo .row p {
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+.empleo .row ul {
+	padding-left: 8px;
+	font-weight: 500;
+}
+
+.empleo .row li {
+	list-style: none;
+	font-size: 18px;
+}
+
+.empleo .row i {
+	margin-right: 8px;
+}
+
+.empleo .row a {
+	background: #167557;
+	border: 0;
+	border-radius: 20px;
+	padding: 8px 30px;
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 5px;
+	margin:5px auto 25px auto;
+	display: inline-block;
+  }
+
+  .empleo .row  {
+	align-items: center;
+}
+
+@media screen and (max-width:574px){
+	.empleo .row a {
+		text-align: center;
+		display: block;
+	  }
+	
+}
+
+@media screen and (max-width:991px){
+	.empleo {
+		padding-top: 0px;
+	  }
+
+	  .banner{
+		  margin-top: 62px !important;
+	  }
+	
 }
