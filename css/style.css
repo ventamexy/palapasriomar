@@ -154,7 +154,10 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  height: 35px;
+  height: 190px;
+  width: 190px;
+  margin-left: 50px;
+  margin-top: -70px;
 }
 
 .main-pages {
