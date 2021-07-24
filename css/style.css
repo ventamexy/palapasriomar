@@ -1423,10 +1423,10 @@ justify-content: center;
 
 #tipo-visa img {
  margin: auto;
-  padding-top: 10px;
-  width: 320px;
-  margin-left: -20px;
-  color: red;
+padding-top: 10px;
+width: 290px;
+  /*margin-left: -15px;*/
+color: red;
 
 }
 
