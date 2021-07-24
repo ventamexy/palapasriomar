@@ -1430,6 +1430,9 @@ color: red;
 
 }
 
+ul.tip {
+  list-style-type:circle;
+}
 
 
 
