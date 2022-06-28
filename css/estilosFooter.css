@@ -1,0 +1,145 @@
+/* Estilos footer */
+
+.contenedor-titulo-vacante, .tituloCV  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo-vacante li {
+    margin-bottom: 0px!important;
+}
+
+.tituloVacantes .fa-check {
+    background-color: rgb(169 121 88) !important;
+}
+
+.contenedor-titulo-vacante, .contenedor-titulo-vacante .list-group-item.active, .tituloVacantes i,
+.tituloCV, .tituloCV h4 {
+    background-color: #a06c47;
+    border-color: #a06c47;
+    color: #fff!important;
+}
+
+.tituloVacantes {
+    font-weight: bold;
+    font-size: 23px!important;
+    text-align: center;
+}
+
+.contenidoFooter div {
+    background: #a87958;
+    color: #fff;
+}
+
+.titulo-footer-card {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(25 25 25 / 82%)!important;
+    color: #fff;
+    padding: 10px;
+    bottom: 0;
+}
+
+.contenedor-img-ingenieria-civil {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(144, 144, 144, 0.6);
+}
+
+.contenedor-img-ingenieria-civil img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-vacantes ul li:nth-child(1) {
+    padding: 10px;
+    background: #a87958;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-vacantes ul li, .contenedor-vacantes-principal ul li {
+    font-size: 14px;
+    padding-right: 0px!important;
+}
+
+footer a {
+    color: var(--color-principal); 
+}
+
+footer a:hover {
+    color: var(--color-principal)!important;
+}
+
+.titulo-si-proveedor {
+    border-bottom: 5px solid #4b4b4b;
+}
+
+.footer-informacion h3, .horarios-atencion *, .numeros-telefonicos *, .redes-sociales * > * {
+    color: #000;
+}
+
+.links.paginasWeb li {
+    color: var(--color-secundario);
+}
+
+.redes-sociales * > *:hover {
+    color: #fff!important;
+}
+
+.footer-informacion h3 span, .links.paginasWeb li a {
+    color: #fff;
+}
+
+.z-index {
+    z-index: 100;
+}
+
+.z-index-btn {
+    z-index: 200 !important;
+}
+
+
+.padding {
+    padding-bottom: 55px;
+}
+
+.links.paginasWeb li a {
+    color: #fff!important;
+    margin-left: 20px;
+}
+
+.links.paginasWeb li {
+    padding: 15px;
+}
+
+.contenedor-servicios {
+    background-color: #e3e3e3;
+}
+
+.contenedor-servicios div p {
+    padding: 15px;
+    background-color: #f7941e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contenedor-servicios div p:nth-child(odd):hover {
+    transform: rotate(5deg);
+}
+
+.contenedor-servicios div p:nth-child(even):hover {
+    transform: rotate(-5deg);
+}
+
+.fb-page span {
+    display: block!important;
+}

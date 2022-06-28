@@ -1,0 +1,358 @@
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navPrincipal i {
+    color:#fff;
+}
+
+.navegacion-paginas > li {
+    padding: 15px;
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-style: italic;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+
+/* Facebook */
+.fb-page span {
+    display: block!important;
+}
+
+/* ---OTROS--- */
+
+header {
+    background-color: #fff!important;
+    z-index: 200;
+    position: relative;
+}
+
+.irAbajo, .irArriba {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(36 36 32);
+    color: #fff;
+    position: fixed;
+    bottom: 31px;
+    right: 40px;
+    border: 0;
+    box-shadow: 0px 0px 10px 3px #6e6e6e;
+    z-index: 400;
+}
+
+.transform-r-180 {
+    transform: rotate(180deg);
+}
+
+.contenedor-menu-principal {
+    position: relative;
+    padding: 20px;
+}
+
+/* Slider */
+.capaSlider {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 104, 0.5);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 10px;
+    bottom: 0;
+    top: 0;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+button[data-bs-target="#carousel"] {
+    background-color: transparent;
+}
+
+button[data-bs-target="#carousel"].active {
+    background-color: #f79826!important;
+}
+
+.carousel-caption {
+    color: #fff!important;
+    z-index: 3;
+}
+
+.carousel-indicators {
+    z-index: 6!important;
+}
+
+nav.navegacion-principal a {
+    color: #000;
+}
+
+.opcion-marcada {
+    color: #f79521!important;
+}
+
+/***
+* Secciones
+*/
+
+.titulo-seccion {
+    background-color: #f7941e;
+    padding: 20px;
+}
+
+.titulo-seccion > * {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: var(--color-secundario)!important;
+}
+
+.servicios i {
+    color: var(--color-secundario);
+    font-size: 50px;
+}
+
+.servicios-title {
+    font-size: 22px;
+    margin-top: 5px;
+    color: #00012B;
+    font-weight: bold;
+}
+
+.servicios-contenido {
+    color: #4D4D4D;
+    font-weight: 600;
+}
+
+.informacion-servicios {
+    background: #F2F2F2;
+    padding: 30px 0px;
+}
+
+.contenido-info-servicios {
+    font-size: 18px;
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+.informacion-servicios li {
+    padding: 3px 0px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #00012B;
+}
+
+.informacion-servicios li span {
+    padding-left: 10px;
+}
+
+.btnVerServicios {
+    padding: 8px 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(247, 148, 30, 0.7);
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: none;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btnVerServicios:hover, .btnVerServicios:active {
+    background-color: rgb(247, 148, 30);
+}
+
+/* Servicios */
+.nuestro-trabajo {
+    padding: 0;
+}
+
+.servicio-contenedor:nth-child(even) {
+    background: #F2F2F2;
+    padding: 30px 0px;
+}
+
+.informacion-elaboracion-planos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicio-contenedor li {
+    display: flex;    
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+
+.servicio-contenedor li span {
+    margin-left: 5px;
+}
+
+.servicio-contenedor li i {
+    font-size: 20px;
+}
+
+.servicio-contenedor h3 {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+/* Mapa */
+
+.titulo-mapa {
+    border-bottom: 4px solid #f7941d;
+}
+
+.info-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-contacto ul {
+    width: 100%;
+}
+
+.info-contacto ul li:nth-child(1) {
+    display: block;
+    text-align: center;
+}
+
+.contenedor-facebook {
+    overflow-x: hidden;
+}
+
+.contactos-otros {
+    margin-top: 0px!important;
+    justify-content: space-between;
+}
+
+.fa.fa-phone {
+    transform: rotate(114deg);    
+}
+
+.pie {
+    background: #f7941d;
+    text-align: center;
+}
+
+.pie p {
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Servicios */
+.imgServicios {
+    flex-wrap: wrap;
+    height: 450px;
+    background-size: cover;
+}
+
+.imgServicios h3 {
+    font-size: 50px;
+    color: #fff;
+    background: #f7941e;
+    padding: 10px;
+    border-radius: 19px;
+}
+
+.img-servicios {
+    background-image: url("../img/servicios/banner.jpg");
+    background-position: center;
+}
+
+.img-nosotros {
+    background-image: url("../img/nosotros/team.png");
+    background-position: center;
+}
+
+.img-contacto {
+    background-image: url("../img/nosotros/contacto.png");
+    background-position: center;
+}
+
+.servicios .titulo-seccion h4 {
+    font-size: 34px;
+}
+
+/* Nosotros */
+
+.contenedor-mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card-img img {
+    width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+
+.contacto-telefonos li i {
+    font-size: 17px;
+}
+
+.enviarMensaje {
+    padding: 8px 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #f6a94a;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border: none;
+    -webkit-transition: background .5s;
+    transition: background .5s;
+    float: left;
+}
+
+.enviarMensaje:hover {
+    background-color: #f7941e;
+}

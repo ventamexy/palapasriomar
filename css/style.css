@@ -13,6 +13,18 @@ a {
   transition: 0.5s;
 }
 
+.navbar-nav a {
+  color: #283d50;
+}
+
+a i .fa-globe {
+  color:#fff !important;
+}
+
+.nav-item .fa-globe {
+  color: #000;
+}
+
 a:hover,
 a:active,
 a:focus {
