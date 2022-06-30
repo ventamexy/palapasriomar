@@ -96,18 +96,33 @@
   box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 
+.margin {
+  margin-top: 200px;
+}
+
 /*------------------------------------------------------------------
                               BANNER
 -------------------------------------------------------------------*/
 
 .banner {
-  background-image: url(https://images.pexels.com/photos/3637836/pexels-photo-3637836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url('https://images.pexels.com/photos/6779229/pexels-photo-6779229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px 0;
   text-align: center;
-  margin-top: 81px;
+  margin-top: 255px;
+}
+
+.banner-3 {
+  background-image: url('https://images.pexels.com/photos/2996073/pexels-photo-2996073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  text-align: center;
+  margin-top: 255px;
+  object-fit: cover;
 }
 
 .banner h2 {
@@ -117,7 +132,7 @@
 }
 
 .banner2 {
-  background-image: url(https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url('https://images.pexels.com/photos/3209049/pexels-photo-3209049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
