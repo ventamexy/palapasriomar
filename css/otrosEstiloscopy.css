@@ -14,6 +14,10 @@ ol li {
     list-style: auto!important;
 }
 
+.no-wrap {
+    flex-wrap: nowrap!important;
+}
+
 .tituloImagenHeader {
     white-space: pre-line;
     padding-bottom: 0px!important;
@@ -421,6 +425,7 @@ textarea[name="mensaje"] {
     position: fixed;
     top: 0;
     transition: 0.5s;
+    z-index: 100;
 }
 
 .menuPrincipal li {
@@ -475,10 +480,10 @@ textarea[name="mensaje"] {
 
 @media (max-width:991px) {
 
-    .navbar-collapse {
+    /* .navbar-collapse {
         position: absolute;
         right: 0;
-    }
+    } */
 
     .navbar-toggler {
         position: absolute;
@@ -489,7 +494,7 @@ textarea[name="mensaje"] {
 
     .navbar-collapse {
         width: 100%;
-        background-color: #2f2f2f;
+        background-color: #f9f8f8;
         margin-right: 0;
     }
 
@@ -513,7 +518,7 @@ textarea[name="mensaje"] {
 }
 
 .navbar {
-    flex-wrap: wrap!important;
+    flex-wrap: wrap;
     border-bottom: unset!important;
 }
 
@@ -610,7 +615,7 @@ textarea[name="mensaje"] {
 }
 
 .item-activo {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #ce9f75;
 }
 
 /* Anchuras */

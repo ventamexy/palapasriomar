@@ -39,85 +39,70 @@
     $('#header').addClass('header-scrolled');
   }
 
-  // Smooth scroll for the navigation and links with .scrollto classes
-  $('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        var top_space = 0;
+});
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
+window.addEventListener("load", function() {
 
-          if (! $('#header').hasClass('header-scrolled')) {
-            top_space = top_space - 20;
+  // Selección de opción del menú en base a la sección actual.
+  let pagina = window.location.pathname;
+  if ( pagina != "/" ) {
+
+      let arrayAhref = $("#navPrincipal ul li a");
+      arrayAhref.removeClass("item-activo");
+      for (var i = 0; i < arrayAhref.length; i++) {
+          let elemento = arrayAhref[i];
+          if ( elemento.pathname == pagina ) {
+              elemento.classList.add("item-activo");
+              // --- Se agrega la clase para no mostrar el borde inferior del elemento.
+              contenedorPadre = elemento.parentNode;
+              contenedorPadre.classList.add("background-color-none");
+              return;
           }
-        }
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.main-nav, .mobile-nav').length) {
-          $('.main-nav .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('.mobile-nav-overly').fadeOut();
-        }
-        return false;
+          
       }
-    }
-  });
 
-  // Navigation active state on scroll
-  var nav_sections = $('section');
-  var main_nav = $('.main-nav, .mobile-nav');
-  var main_nav_height = $('#header').outerHeight();
+  }
 
-  $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
+});
+
+// Nuevo JS
+
+// Movimiento scroll
+$(document).on("scroll", function() {
+
+  let scrollYPosicionActual = $(this)[0].scrollingElement.scrollTop;
+  if ( scrollYPosicionActual >= 200 ) {
+      $("#navbar")[0].classList.add("menu-fijado");
+  } else {
+      $("#navbar")[0].classList.remove("menu-fijado");
+  }
+
+  var scrollY = document.scrollingElement;
+  var alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
   
-    nav_sections.each(function() {
-      var top = $(this).offset().top - main_nav_height,
-          bottom = top + $(this).outerHeight();
+  if ( alturaScrollY == scrollYPosicionActual ) {
+      $(".irAbajo i").addClass("transform-r-180");
+      $(".irAbajo").removeClass("irAbajo").addClass("irArriba");
+  } else {
+      $(".irAbajo i").removeClass("transform-r-180");
+      $(".irArriba").removeClass("irArriba").addClass("irAbajo");
+  }
   
-      if (cur_pos >= top && cur_pos <= bottom) {
-        main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#'+$(this).attr('id')+'"]').parent('li').addClass('active');
-      }
-    });
+});
+
+
+$(document).on("click", ".irAbajo", function(){
+  let scrollY = document.scrollingElement;
+  let alturaScrollY = scrollY.offsetHeight - scrollY.clientHeight;
+  window.scroll({
+      top: alturaScrollY,
+      behavior: 'smooth'
   });
+});
 
-  // jQuery counterUp (used in Whu Us section)
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
+$(document).on("click", ".irArriba", function(){
+  window.scroll({
+      top: 0,
+      behavior: 'smooth'
   });
-
-  // Porfolio isotope and filter
-  $(window).on('load', function () {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
-    });
-    $('#portfolio-flters li').on( 'click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-  
-      portfolioIsotope.isotope({ filter: $(this).data('filter') });
-    });
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-})(jQuery);
-
+});
