@@ -17,22 +17,26 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/8a7e44f3fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap/dist/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/otrosEstilos.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/acordion.css">
     <link rel="stylesheet" href="css/estilosFooter.css">
-    <link rel="stylesheet" href="css/otrosEstiloscopy.css">
+    <link rel="stylesheet" href="css/estilosFormularioContacto.css"> 
+    <link rel="stylesheet" href="css/spinnerCarga.css">
+    <!-- <link rel="stylesheet" href="css/otrosEstiloscopy.css"> -->
     <link rel="stylesheet" href="css/photoswipe-dynamic-caption-plugin.css">
     <link rel="stylesheet" href="css/photoswipe.css">
-    <link rel="stylesheet" href="css/root.css">
-</head>
+   
+</head> 
 <body>
   <div class="barra" id="navbar">     
     <div class=" clearfix fixed-top">
@@ -99,8 +103,6 @@
         </nav>
     </div>
 </div>
-
-
   <div class="banner">
     <div class="container wrapper">
         <h2 class="text-white fst-italic display-5">CONTACTO</h2>
@@ -145,52 +147,78 @@
     </div>
   </section>
 </div>
-
-    <section id="contact">
-      <div class="container-fluid">
+<section class="seccion page" id="contacto">
+    <div class="row">
         <div class="section-header">
-        </div>
-        <div class="row wow fadeInUp">
-          <div class="col-lg-8">
-            <div class="form">
-              <div id="sendmessage">Mensaje Enviado</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"
-                      data-rule="minlen:4" data-msg="Ingrese un nombre valido" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                      data-rule="email" data-msg="Ingrese un email valido" />
-                    <div class="validation"></div>
-                  </div>
+            <div class="rounded border border-light bg-light text-dark w-100 p-3"></div>
+               <h4>Envianos un mensaje</h4>
+            <form class="frmPrecalificacion">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label for="Nombre"><strong>Nombre</strong></label>
+                        <input 
+                        type="text"   
+                        name="nombre"
+                        class="form-control mb-0"/>
+                        <span class="campoObligatorio">Campo obligatorio</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
-                    data-rule="minlen:4" data-msg="Ingrese datos validos" />
-                  <div class="validation"></div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label for="Apellido paterno"><strong>Apellido paterno</strong></label>
+                        <input 
+                        type="text" 
+                        name="apellidoPaterno"
+                        class="form-control mb-0"/>
+                        <span class="campoObligatorio">Campo obligatorio</span>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Ingrese datos validos" placeholder="Message"></textarea>
-                  <div class="validation"></div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label for="Apellido materno"><strong>Apellido materno</strong></label>
+                        <input 
+                        type="text" 
+                        name="apellidoMaterno"
+                        class="form-control"/>
+                    </div>
                 </div>
-                <div><button type="submit" title="Send Message">Enviar Mensaje</button></div>
-              </form>
+                <div class="form-group col-12 col-md-6 col-lg-3">
+                    <label for="nombre">Email:</label>
+                    <input 
+                    type="email" 
+                    name="email"
+                    class="form-control mb-0"/>
+                    <span class="campoObligatorio">Campo obligatorio</span>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="form-group col-12">
+                    <label for="Mensaje"><strong>Escriba su mensaje</strong></label>
+                    <textarea 
+                    class="form-control mb-0"
+                    rows="8"
+                    name="mensaje"></textarea>
+                    <span class="campoObligatorio">Campo obligatorio</span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button 
+                class="btn btn-success btnEnviarPrecalificacion" 
+                type="button">Enviar solicitud</button>
+            </div>
+        </form>
+    </div>
+    <div class="cargaSpinner d-none">
+        <div class="circleA">
+            <div class="circleB"></div>
         </div>
-      </div>
-    </section>
-  </main>
-
+    </div>
+</section>
+  
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.3868157221527!2d-102.1960036690552!3d17.96073179330375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84315c6f0de1739f%3A0xb14c1f83e306c021!2sNicol%C3%A1s%20Bravo%20341%2C%20Centro%2C%2060950%20L%C3%A1zaro%20C%C3%A1rdenas%2C%20Mich.!5e0!3m2!1ses!2smx!4v1623791062964!5m2!1ses!2smx"
     width="100%" height="312px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
     <footer class="site-footer">
       <div class="container">
           <div class="row mb-3">
@@ -812,24 +840,27 @@
         <i class="fa fa-arrow-down" aria-hidden="true"></i>
       </button>
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/jquery.superslides.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery/dist/jquery.min.js"></script>
+    <script src="assets/bootstrap/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="assets/bootstrap/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootbox/dist/bootbox.min.js"></script>
+   <script src="/js/jquery.superslides.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/mobile-nav/mobile-nav.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cotizador.js"></script>
+    <script src="js/carousel.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script src="/js/custom.js"></script>
+    <script src="js/server/enviarEmail.js"></script>
     <!--Plugin Facebook-->
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0"
