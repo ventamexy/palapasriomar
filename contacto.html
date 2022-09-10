@@ -32,9 +32,11 @@
     <link rel="stylesheet" href="css/estilosFooter.css">
     <link rel="stylesheet" href="css/estilosFormularioContacto.css"> 
     <link rel="stylesheet" href="css/spinnerCarga.css">
+    <link rel="stylesheet" href="css/estilosReCaptcha.css"></link>
     <!-- <link rel="stylesheet" href="css/otrosEstiloscopy.css"> -->
     <link rel="stylesheet" href="css/photoswipe-dynamic-caption-plugin.css">
     <link rel="stylesheet" href="css/photoswipe.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
    
 </head> 
 <body>
@@ -202,6 +204,15 @@
                     <span class="campoObligatorio">Campo obligatorio</span>
                 </div>
             </div>
+            <div class="row d-flex align-items-center position-relative">
+                <div class="g-recaptcha" data-sitekey="6Ld7wOghAAAAAGaY-MJoG0G8QMJfH0b7CLWkvVFA"></div>
+                <div class="col-1 position-absolute contenedor-boton">
+                    <button class="reload-captcha" type="button">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                </div>
+            </div>
+            <br/>
             <div class="row justify-content-center">
                 <button 
                 class="btn btn-success btnEnviarPrecalificacion" 
@@ -850,7 +861,6 @@
     <script src="lib/mobile-nav/mobile-nav.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/cotizador.js"></script>
     <script src="js/carousel.js"></script>
         <script src="lib/counterup/counterup.min.js"></script>
